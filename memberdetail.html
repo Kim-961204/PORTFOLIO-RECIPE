@@ -1,0 +1,137 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="”Expires”" content="”-1″" />
+	<meta http-equiv="”Pragma”" content="”no-cache”" />
+	<meta http-equiv="”Cache-Control”" content="”No-Cache”" />
+    
+    <title>오늘의 레시피</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="memberdetail/favicon.ico" />
+    <script src="memberdetail/script0.js"></script>
+    <!-- Google fonts-->
+    <link href="memberdetail/style0.css" rel="stylesheet" type="text/css" />
+    <link href="memberdetail/style1.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+	<link href="memberdetail/style2.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="memberdetail/style3.css" rel="stylesheet" />
+    <link href="memberdetail/style4.css" rel="stylesheet" />
+    <link href="memberdetail/style5.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+	<!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink navmenu" id="mainNav">
+        <div class="container">
+        	<a class="navbar-brand kaushan-script-regular" href="index.html">ToDay Recipe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="menuBtnToggle()">
+                Menu
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipelist.html">오늘의 레시피</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boardlist.html">게시판</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="#"><span>관리자</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+			       		<ul>
+			            	<li><a href="memberlist.html">회원관리</a></li>
+			            	<li><a href="adminrecipelist.html">레시피관리</a></li>
+			            	<li><a href="boardlist.html">게시판관리</a></li>
+			            </ul>
+			          </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="mypage.html">마이페이지</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div>
+		<script>
+	        /*<![CDATA[*/
+	        var msg = null; // Spring에서 전달된 모델 데이터를 JavaScript 변수에 저장
+	        if(msg != null){
+		        alert(msg);  // 메시지 alert로 표시
+	        }
+	        /*]]>*/
+	    </script>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container width30 marginTop5 shadow-lg card o-hidden border-1 shadow-lg padding40">
+                <div class="text-center">
+                    <h2 class="section-heading text-muted">회원정보 관리</h2>
+                    <h3 class="section-subheading text-muted">회원정보를 수정할 수 있습니다.</h3>
+                </div>
+                <form id="contactForm" name="memFrm" action="/admin/updatemember" method="post">
+                    <div class="row align-items-stretch">
+                        <div class="text-center">
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- ID input-->
+                                <label for="name-field" class="pb-2">아이디 *</label>
+                                <input class="form-control" id="member_id" name="member_id" type="text" value="016a5n3n" readonly="readonly" />
+                            </div>
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- Password input-->
+                                <label for="name-field" class="pb-2">패스워드 *</label>
+                                <input class="form-control" id="member_pw" name="member_pw" type="Password" placeholder="비밀번호 변경시 입력해주세요. *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="memberPW:required">비밀번호 변경시 입력해주세요.</div>
+                            </div>
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- ID input-->
+                                <label for="name-field" class="pb-2">이름 *</label>
+                                <input class="form-control" id="member_nm" name="member_nm" type="text" value="사용자1" />
+                            </div>
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- Password input-->
+                                <label for="name-field" class="pb-2">생년월일 *</label>
+                                <input class="form-control" id="birthday" name="birthday" type="date" value="2025-03-04" placeholder="생년월일 선택 *" data-sb-validations="required" />
+                            </div>
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- Password input-->
+                                <label for="name-field" class="pb-2">E-MAIL</label>
+                                <input class="form-control" id="email" name="email" type="email" value="koreaitac19@gmail.com" placeholder="이메일을 입력하세요." />
+                            </div>
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- Password input-->
+                                <label for="name-field" class="pb-2">전화번호</label>
+                                <input class="form-control" id="telno" name="telno" type="text" value="010-1111-2222" placeholder="전화번호를 입력하세요. (ex: 01012341234)" />
+                            </div>
+                            <div class="form-group" style="text-align: justify;">
+                                <!-- Password input-->
+                                <label for="name-field" class="pb-2">주소</label>
+                                <input class="form-control" id="address" name="address" type="text" value="대전 광역시 유성구 도룡동 11-1" placeholder="주소를 입력하세요." />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit Button-->
+                    <div class="text-center">
+                    	<button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">정보수정</button>
+                    	<button class="btn btn-secondary btn-xl text-uppercase" id="submitButton" type="button" onclick="location.href='/admin/memberlist'">목록</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+	</div>
+	<!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright © Today Recipe My Web Site Project 2025</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                	<span>CS CENTER (02-123-1234)</span><br />
+					평일운영시간 : 오전 9:00 ~ 12:00 / 오후 13:00~18:00<br />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="memberdetail/script1.js"></script>
+
+
+</body></html>

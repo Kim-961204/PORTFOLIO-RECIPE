@@ -1,0 +1,246 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="”Expires”" content="”-1″" />
+	<meta http-equiv="”Pragma”" content="”no-cache”" />
+	<meta http-equiv="”Cache-Control”" content="”No-Cache”" />
+    
+    <title>오늘의 레시피</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="boardlist/favicon.ico" />
+    <script src="boardlist/script0.js"></script>
+    <!-- Google fonts-->
+    <link href="boardlist/style0.css" rel="stylesheet" type="text/css" />
+    <link href="boardlist/style1.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+	<link href="boardlist/style2.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="boardlist/style3.css" rel="stylesheet" />
+    <link href="boardlist/style4.css" rel="stylesheet" />
+    <link href="boardlist/style5.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+	<!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink navmenu" id="mainNav">
+        <div class="container">
+        	<a class="navbar-brand kaushan-script-regular" href="index.html">ToDay Recipe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="menuBtnToggle()">
+                Menu
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipelist.html">오늘의 레시피</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boardlist.html">게시판</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="#"><span>관리자</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+			       		<ul>
+			            	<li><a href="memberlist.html">회원관리</a></li>
+			            	<li><a href="adminrecipelist.html">레시피관리</a></li>
+			            	<li><a href="boardlist.html">게시판관리</a></li>
+			            </ul>
+			          </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="mypage.html">마이페이지</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div>
+		<script src="boardlist/script1.js"></script>
+        <!-- Contact-->
+        <section class="page-section">
+        	<div class="container">
+        		<div id="content" class="content-center-w60">
+	                <!-- Begin Page Content -->
+	                <div class="container-fluid">
+	
+	                    <!-- Page Heading -->
+	                    <h1 class="h3 mb-2 text-uppercase text-color-green title_left">자유게시판 <span>관리</span></h1>
+	                    <p class="mb-4 title_left_sub">이웃들간에 자유로운 소통하는 공간이에요. 욕설, 비방보다 따듯한 말로 인터넷 예절을 지켜주세요.</p>
+	                    <div class="row">
+	                    	<form name="boardListForm" action="/boardlist" method="post">
+	                    		<input type="hidden" name="page" value="1" />
+	                    		<div class="board-search">
+									<div class="search-box">
+										<select name="recordSize" title="검색개수" onchange="location='#'">
+											<option value="10" selected="selected">10개</option>
+											<option value="20">20개</option>
+											<option value="50">50개</option>
+										</select>
+								  	</div>
+						         	<div class="search-box">
+						            	<select name="searchType" title="검색방법">
+							            	<option value="all">제목+내용</option>
+							            	<option value="title">제목</option>
+											<option value="content">내용</option>
+							            	<option value="reg_member">작성자</option>
+							            </select>
+						          	</div>
+						          	<div class="search-txt">
+						            	<input type="text" value="" name="keyword" title="검색어" />
+						          	</div>
+						          	<a class="search-submit" href="#">검색</a>
+						        </div>
+	                    	</form>
+	                    </div>
+	                    <div class="row">
+		                	<table class="table" width="100%" cellspacing="0" style="width: 100%;">
+		                    	<thead>
+		                        	<tr role="row" style="border-bottom: 2px solid #bba9e5;">
+			                         	<th tabindex="0" style="width: 10%;">No.</th>
+			                         	<th tabindex="0" style="width: 60%;">제목</th>
+			                         	<th tabindex="0" style="width: 10%;">작성자</th>
+			                         	<th tabindex="0" style="width: 10%;">작성일</th>
+			                         	<th tabindex="0" style="width: 10%;">조회수</th>
+		                         	</tr>
+		                     	</thead>
+		                     	<tbody>
+		                     		
+			                     	<tr class="odd">
+			                             <td class="sorting_1">130</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">이웃들간에 자유로운 소통하는 공간이에요. 욕설, 비방보다 따듯한 말로 인터넷 예절을 지켜주세요.</a></td>
+			                             <td>admin</td>
+			                             <td>2025-03-17</td>
+			                             <td>11</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">128</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">오늘 저녁 고민 돼면 새로나온 맵탱 라면은 어때요?</a></td>
+			                             <td>test4</td>
+			                             <td>2025-03-17</td>
+			                             <td>8</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">127</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">오늘은 날씨가 좋아 라면을 끓여 먹기 좋은 날입니다.</a></td>
+			                             <td>admin</td>
+			                             <td>2025-03-17</td>
+			                             <td>1</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">126</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">유성구 맛집 정보 공유</a></td>
+			                             <td>admin</td>
+			                             <td>2025-03-17</td>
+			                             <td>2</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">125</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">안녕하세요.</a></td>
+			                             <td>youngsys</td>
+			                             <td>2025-03-14</td>
+			                             <td>2</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">124</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">이웃들간에 자유로운 소통하는 공간</a></td>
+			                             <td>test1</td>
+			                             <td>2025-03-14</td>
+			                             <td>7</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">123</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">메머드 커피 푸딩딸기라떼</a></td>
+			                             <td>admin</td>
+			                             <td>2025-03-13</td>
+			                             <td>4</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">122</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">이야 오늘 참 날씨가 좋다</a></td>
+			                             <td>016a5n3n</td>
+			                             <td>2025-03-13</td>
+			                             <td>7</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">121</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">짜장과 카레 중에 어떤걸 해먹지?</a></td>
+			                             <td>admin</td>
+			                             <td>2025-03-12</td>
+			                             <td>4</td>
+			                         </tr>
+			                     	<tr class="odd">
+			                             <td class="sorting_1">119</td>
+			                             <td style="text-align: left;"><a href="boarddetail.html">드래곤볼 124화 나왔습니다</a></td>
+			                             <td>test4</td>
+			                             <td>2025-03-06</td>
+			                             <td>32</td>
+			                         </tr>
+		                 		</tbody>
+		                 	</table>      	
+		                </div>
+		                <div class="recipe_add_div">
+		                    <button class="btn btn-primary btn-lg text-uppercase" type="button" onclick="location.href='registboard.html'">글 쓰기</button>
+		                </div>
+						<div class="row">
+	                    	<div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate" style="width: 50%; margin: 0 auto;">
+	                   			<ul class="pagination">
+	                      			<li class="paginate_button page-item previous  disabled">
+	                      				<a href="#" tabindex="0" class="page-link" onchange="location='#'">Previous</a>
+	                      			</li>
+	                   				<li class="paginate_button page-item  active">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">1</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">2</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">3</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">4</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">5</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">6</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">7</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">8</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">9</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item ">
+	                   					<a href="#" tabindex="0" class="page-link" onchange="location='#'">10</a>
+	                   				</li>
+	                   				<li class="paginate_button page-item next " id="dataTable_next">
+	                   					<a href="#" tabindex="0" class="page-link"onchange="location='#'">Next</a>
+	                   				</li>
+	                   			</ul>
+	                   		</div>
+	                    </div>
+	                </div>
+	                <!-- /.container-fluid -->
+	            </div>
+        	</div>
+        </section>
+	</div>
+	<!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright © Today Recipe My Web Site Project 2025</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                	<span>CS CENTER (02-123-1234)</span><br />
+					평일운영시간 : 오전 9:00 ~ 12:00 / 오후 13:00~18:00<br />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="boardlist/script2.js"></script>
+
+
+</body></html>

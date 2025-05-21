@@ -1,0 +1,185 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="”Expires”" content="”-1″" />
+	<meta http-equiv="”Pragma”" content="”no-cache”" />
+	<meta http-equiv="”Cache-Control”" content="”No-Cache”" />
+    
+    <title>오늘의 레시피</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="recipedetail/favicon.ico" />
+    <script src="recipedetail/script0.js"></script>
+    <!-- Google fonts-->
+    <link href="recipedetail/style0.css" rel="stylesheet" type="text/css" />
+    <link href="recipedetail/style1.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+	<link href="recipedetail/style2.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="recipedetail/style3.css" rel="stylesheet" />
+    <link href="recipedetail/style4.css" rel="stylesheet" />
+    <link href="recipedetail/style5.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+	<!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink navmenu" id="mainNav">
+        <div class="container">
+        	<a class="navbar-brand kaushan-script-regular" href="index.html">ToDay Recipe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" onclick="menuBtnToggle()">
+                Menu
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="recipelist.html">오늘의 레시피</a></li>
+                    <li class="nav-item"><a class="nav-link" href="boardlist.html">게시판</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link" href="#"><span>관리자</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+			       		<ul>
+			            	<li><a href="memberlist.html">회원관리</a></li>
+			            	<li><a href="adminrecipelist.html">레시피관리</a></li>
+			            	<li><a href="boardlist.html">게시판관리</a></li>
+			            </ul>
+			          </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="mypage.html">마이페이지</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">로그아웃</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div>
+		<script src="recipedetail/script1.js"></script>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center marginTop5">
+                    <h2 class="section-heading text-uppercase">레시피 등록</h2>
+                    <h3 class="section-subheading text-muted">이웃을 위한 나만의 레시피를 공유해주세요.</h3>
+                </div>
+                <div class="row">
+                	<form name="recipeFrm" action="saverecipe" method="post" enctype="multipart/form-data">
+                		<div class="cont_box pad_l_60">
+					      	<div id="divMainPhotoUpload" class="cont_pic2">
+					        	<div style="position:absolute;left:-3000px">
+					        		<input type="file" name="img_file" id="q_main_file" file_gubun="main" accept="jpeg,png,gif" style="width:0px; height:0px; font-size:0px;" />
+					        	</div>
+						        <div id="divMainPhotoBox" is_over="0">
+						            <img id="mainPhotoHolder" onclick="browseMainFile()" src="recipedetail/image0.gif" style="width: 250px; height: 250px; cursor:pointer" />
+						        </div>
+					      	</div>
+					    <div class="cont_line">
+					    	<p class="cont_tit4">레시피 제목</p>
+					    	<input type="text" name="recipe_nm" id="cok_title" value="" class="form-control step_file" placeholder="예) 소고기 미역국 끓이기" style="width:610px; " />
+					    </div>
+					    <div class="cont_line pad_b_25">
+					    	<p class="cont_tit4" style="height: 100px;">요리소개</p>
+					    	<textarea name="recipe_sum" id="cok_intro" class="form-control step_cont" placeholder="이 레시피의 탄생배경을 적어주세요. 예) 남편의 생일을 맞아 소고기 미역국을 끓여봤어요. 어머니로부터 배운 미역국 레시피를 남편의 입맛에 맞게 고안했습니다." style="height:100px; width:610px; resize:none;"></textarea>
+					    </div>
+					    <div class="cont_line">
+					      	<p class="cont_tit4">카테고리</p>
+					        <select name="category_code" id="cok_sq_category_4">
+								<option value="">종류별</option>
+								<option value="56">한식</option>
+								<option value="54">중식</option>
+								<option value="55">일식</option>
+								<option value="60">양식</option>
+								<option value="53">분식</option>
+								<option value="52">기타</option>
+							</select>
+							<span class="guide">분류를 바르게 설정해주시면, 이용자들이 쉽게 레시피를 검색할 수 있어요.</span>
+					      </div>
+					      <div class="cont_line">
+					      	<p class="cont_tit4">요리정보</p>
+					        <select name="quantity" id="cok_portion">
+								<option value="">인원</option>
+								<option value="1">1인분</option>
+								<option value="2">2인분</option>
+								<option value="3">3인분</option>
+								<option value="4">4인분</option>
+								<option value="5">5인분</option>
+								<option value="6">6인분이상</option>
+							</select>
+					        <select name="cook_time" id="cok_time">
+								<option value="">시간</option>
+								<option value="5">5분이내</option>
+								<option value="10">10분이내</option>
+								<option value="15">15분이내</option>
+								<option value="20">20분이내</option>
+								<option value="30">30분이내</option>
+								<option value="60">60분이내</option>
+								<option value="90">90분이내</option>
+								<option value="120">2시간이내</option>
+								<option value="999">2시간이상</option>
+							</select>
+					        <select name="recipe_lv" id="cok_degree">
+								<option value="">난이도</option>
+								<option value="1">아무나</option>
+								<option value="2">초급</option>
+								<option value="3">중급</option>
+								<option value="4">고급</option>
+								<option value="5">전문가</option>
+							</select>
+					      </div>
+					      <div class="cont_line">
+						    	<p class="cont_tit4" style="height: 100px;">재료 정보</p>
+								<textarea name="ingredients" id="cok_intro" class="form-control step_cont" placeholder="예) 소고기 100g , 배추 3쪽, 양파 반쪽, 후추 2g, 소금 한꼬집 " style="height:100px; width:84%; resize:none;"></textarea>
+			            		<span class="guide mag_b_15" style="width:100%;">재료가 남거나 부족하지 않도록 정확한 계량정보를 적어주세요.</span>
+						    </div>
+					    </div>
+				        
+				        <div class="cont_box pad_l_60">
+					      	<p class="cont_tit3" style="border-bottom: 2px solid #74b243;">요리순서</p><br />
+						  	<span class="guide mag_b_15"><b>요리의 맛이 좌우될 수 있는 중요한 부분은 빠짐없이 적어주세요.</b><br />
+								예) 10분간 익혀주세요 ▷ 10분간 약한불로 익혀주세요.<br />
+								      마늘편은 익혀주세요 ▷ 마늘편을 충분히 익혀주셔야 매운 맛이 사라집니다.<br />
+								      꿀을 조금 넣어주세요 ▷ 꿀이 없는 경우, 설탕 1스푼으로 대체 가능합니다.
+						  	</span>
+					      	<div id="divStepArea" class="ui-sortable">
+					      		<div id="divStepItem_1" class="cont_line pad_b_25">
+					            	<p class="cont_tit5" style="height: 160px;">STEP1</p>
+						         	<textarea name="cook_cont" id="step_text_1" class="form-control step_cont" placeholder="예) 소고기는 기름기를 떼어내고 적당한 크기로 썰어주세요." style="height:160px; width:80%; resize:none;"></textarea>
+						            <div class="cont_line">
+								    	<p class="cont_tit6">요리 사진</p>
+								    	<input type="file" name="sub_file" id="cook_file" value="" class="form-control step_file" style="width:80%; " />
+								    </div>
+					          </div>
+							</div>
+							<div class="noti_btn">
+			                    <button type="button" onclick="addMaterialGroup()" class="btn-lg btn-default"><i class="bi bi-plus-circle-fill"></i> 요리 순서 추가</button>
+			                    <button type="button" onclick="removeMaterialGroup()" class="btn-lg btn-default"><i class="bi bi-trash-fill"></i> 요리 순서 삭제</button>
+			                </div>
+				        </div>
+				        
+				        <div class="recipe_add_div">
+		                    <button class="btn btn-secondary btn-lg text-uppercase" type="button" onclick="location='#'">레시피 등록</button>
+		                    <button class="btn btn-success btn-lg text-uppercase" type="button" onclick="location.href='recipelist.html'">취소</button>
+		                </div>
+                	</form>
+	            </div>
+            </div>
+        </section>
+        
+        
+	</div>
+	<!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright © Today Recipe My Web Site Project 2025</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                	<span>CS CENTER (02-123-1234)</span><br />
+					평일운영시간 : 오전 9:00 ~ 12:00 / 오후 13:00~18:00<br />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="recipedetail/script2.js"></script>
+
+
+</body></html>
